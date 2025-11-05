@@ -13,11 +13,11 @@ except Exception:
     HAVE_FITPARSE = False
 
 st.set_page_config(page_title="Cadence & Power Stability", layout="wide")
-st.title("Cadence & Power Stability Visualizer")
+st.title("Let's see who is pulling the most in the group")
 
 st.markdown(
     "Upload a **FIT** (Export Original) or **CSV** with columns like "
-    "`time, cadence, watts`. The app will resample to 1 Hz, find stable windows, and plot."
+    "`time, cadence, watts`. The app will resample to 1 Hz, find stable windows, plot and find out the time the rider is doing the pull."
 )
 
 uploaded = st.file_uploader("Upload FIT or CSV", type=["fit", "csv"])
